@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleep Monitor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Sleep monitor</h1>
+    <video id="video" autoplay playsinline></video>
+
+    <canvas id="canvas" style="display: none;"></canvas>
+
+    <div id="alert">¡Alerta de sueño detectada!</div>
+    <audio src="Alerta.mp3" id="alertSound" preload="auto"></audio>
+
+    <div class="output">
+        <p>EAR: <span id="ear">-</span></p>
+        <p>Ojos cerrados: <span id="closed">-</span></p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
